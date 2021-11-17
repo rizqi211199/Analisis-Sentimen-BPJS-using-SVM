@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        nav{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+{% block content %}
+    <!-- Don't forget the "|safe"! -->
+    <div id="chart">
+       <embed type="image/svg+xml" src= {{ barchart_data|safe }} style="width:60%;height:50%" />
+    </div>    
+{% endblock %}
+
+<form method="GET" action="{{url_for('wc')}}">
+    <input type="submit" value="TAMPILKAN WORDCLOUD">
+</form>
+</nav>
+</body>
+</html>

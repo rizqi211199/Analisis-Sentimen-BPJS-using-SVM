@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        nav{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <h4>WORD CLOUD POSITIF</h4>
+{% for i in article %}
+    <img src="data:image/png;base64,{{i}}" style="width:70%;height:60%">
+{% endfor %}
+<form method="GET" action="{{url_for('wc3')}}">
+    <input type="submit" value="WORDCLOUD NETRAL">
+</form>
+</nav>
+</body>
+</html>

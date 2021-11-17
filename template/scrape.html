@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>coba</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+{% block title%} {% endblock %}
+
+{% block content %}
+
+<nav>
+    <h3 class="judul1">IDENTIFIKASI OPINI MASYARAKAT TERHADAP KENAIKAN IURAN BPJS</h3>
+    <h3 class="judul2">BERBASIS ANALISIS SENTIMEN</h3>
+    <div class="scraping">
+        <form action="#" method="post">
+            <input type="text" name="nm" placeholder="Masukan Kata Kunci"><br>
+            <input type="number" min="0" max="1000" name="jml" placeholder="Masukan Jumlah"><br>
+            <input type="submit" value="Analisis" name="Analisis">
+        </form>
+    </div>
+</nav>
+{% endblock %}
+</body>
+</html>

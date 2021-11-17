@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.judul1{
+    text-align: center;
+    text-emphasis-color: white;
+}
+.judul2{
+    text-align: center;
+}
+
+nav{
+    background: lightblue;
+    width: 100%;
+    height: 1000px;
+}
+.scraping{
+    margin-left: 500px ;
+    margin-right:250px ;
+    margin-top:50px ;
+    margin-bottom: 600px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: lightblue;
+
+}
+input[type= text], input[type=number] {
+    margin: 5px auto;
+    width: 100%;
+    padding: 10px;
+}
+input[type=submit]{
+    margin: 10px auto;
+    float: right;
+    padding: 5px;
+    width: 90px;
+    border: 1px solid #fff;
+    color: black;
+    background: white;
+    cursor: pointer;
+}
